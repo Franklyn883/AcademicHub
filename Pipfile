@@ -9,6 +9,7 @@ djangorestframework = "*"
 django-cors-headers = "*"
 djangorestframework-simplejwt = "*"
 drf-spectacular = "*"
+django-phonenumber-field = "*"
 
 [dev-packages]
 
