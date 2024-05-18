@@ -1,0 +1,7 @@
+openapi: 3.0.3
+info:
+  title: Academic-Hub API project
+  version: 1.0.0
+  description: A students and staff management system for schools
+paths: {}
+components: {}

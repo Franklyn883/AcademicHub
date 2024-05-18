@@ -1,0 +1,8 @@
+[x]create virtual environment and activate it
+[x]install django and other related libraries and include the in the settings:
+    []djoser
+    [x]django-rest-framework
+    [x]django-cors-headers
+[x]create a new django project
+[]add djoser urls to the urls file
+[x]install drf-speculator for documentation
