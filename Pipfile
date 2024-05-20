@@ -7,9 +7,11 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
-djangorestframework-simplejwt = "*"
+djangorestframework-simplejwt = "~=5.2.1"
 drf-spectacular = "*"
-django-phonenumber-field = "*"
+django-phonenumber-field = {extras = ["phonenumbers"], version = "*"}
+pillow = "*"
+djoser = "*"
 
 [dev-packages]
 

@@ -18,11 +18,19 @@ class CustomUser(models.Model):
         ('M', 'Male'),
         ('F', 'Female')
     ]
+    role_choices =[
+        ('A', 'Admin'),
+        ('S', 'Student'),
+        ('SF', 'Staff')
+    ]
     gender = models.CharField(max_length=1, choices=gender_choices,null=True, blank=True)
-    
+    role = models.CharField(max_length=2, choices = role_choices, null=True, blank=True)
     phone_number = PhoneNumberField(blank=True, null=True) 
     image_url = models.ImageField(upload_to=upload_to, blank=True, null=True)
     
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
     objects = CustomUserManager()
+    
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
