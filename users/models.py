@@ -8,7 +8,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 def upload_to(instance,filename):
     return 'images/{filename}.format(filename=filename)'
 
-class CustomUser(models.Model):
+class CustomUser(AbstractUser):
     username = None
     email = models.EmailField(_("email address"), unique=True)
     first_name = models.CharField(_("first name"), max_length=255)

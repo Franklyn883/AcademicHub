@@ -4,5 +4,5 @@
     [x]django-rest-framework
     [x]django-cors-headers
 [x]create a new django project
-[]add djoser urls to the urls file
+[x]add djoser urls to the urls file
 [x]install drf-speculator for documentation

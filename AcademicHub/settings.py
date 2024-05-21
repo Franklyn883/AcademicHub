@@ -118,6 +118,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+#custon user
+AUTH_USER_MODEL = "users.CustomUser"
 #Setting for Rest_framework_jwt
 REST_FRAMEWORK = {
 
@@ -130,13 +132,12 @@ REST_FRAMEWORK = {
     )
 }
 
-#Djoser settings
+#Djoser config
 DJOSER = {
     'LOGIN_FIELD': 'email',
     'SERIALIZERS': {
         'user_create': 'users.serializers.CustomUserCreateSerializer',
-        'current_user': 'users.serializers.CustomUserSerializer',
-        'user': 'users.serializers.CustomUserSerializer',
+       
     }
 }
 
