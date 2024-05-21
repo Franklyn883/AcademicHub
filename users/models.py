@@ -27,7 +27,7 @@ class CustomUser(AbstractUser):
     role = models.CharField(max_length=2, choices = role_choices, null=True, blank=True)
     phone_number = PhoneNumberField(blank=True, null=True) 
     image_url = models.ImageField(upload_to=upload_to, blank=True, null=True)
-    
+    date_of_birth = models.DateField(null=True, blank=True)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
     objects = CustomUserManager()
