@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     
     # local apps
     'users.apps.UsersConfig',
+    'student.apps.StudentConfig',
     
     #third party apps
     'rest_framework',
