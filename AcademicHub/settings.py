@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     # local apps
     'users.apps.UsersConfig',
     'student.apps.StudentConfig',
+    'department.apps.DepartmentConfig',
+    'courses.apps.CoursesConfig',
+    'faculty.apps.FacultyConfig',
     
     #third party apps
     'rest_framework',
