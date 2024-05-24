@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'department.apps.DepartmentConfig',
     'courses.apps.CoursesConfig',
     'faculty.apps.FacultyConfig',
+    'staff.apps.StaffConfig',
     
     #third party apps
     'rest_framework',
