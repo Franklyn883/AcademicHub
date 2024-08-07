@@ -18,13 +18,8 @@ class CustomUser(AbstractUser):
         ('M', 'Male'),
         ('F', 'Female')
     ]
-    role_choices =[
-        ('A', 'Admin'),
-        ('S', 'Student'),
-        ('SF', 'Staff')
-    ]
+    is_student = models.BooleanField(default=False)
     gender = models.CharField(max_length=1, choices=gender_choices,null=True, blank=True)
-    role = models.CharField(max_length=2, choices = role_choices, null=True, blank=True)
     phone_number = PhoneNumberField(blank=True, null=True) 
     image_url = models.ImageField(upload_to=upload_to, null=True)
     date_of_birth = models.DateField(null=True)

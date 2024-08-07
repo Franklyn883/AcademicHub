@@ -123,7 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-#custon user
+#custom user
 AUTH_USER_MODEL = "users.CustomUser"
 #Setting for Rest_framework_jwt
 REST_FRAMEWORK = {
